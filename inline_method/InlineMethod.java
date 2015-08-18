@@ -9,7 +9,8 @@ public class InlineMethod {
     }
 
     // after refactor
-    int getRating() {
+    int refactorGetRating() {
+        int _numberOfLateDeliveries = 7;
         return (_numberOfLateDeliveries > 5) ? 2 : 1;
     }
 }

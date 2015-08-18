@@ -1,4 +1,9 @@
 public class ExtractMethod {
+
+    void printBanner() {
+        System.out.println("Banner"); 
+    }
+
     //before refactor
     void printOwing(double amount) {
         printBanner(); 

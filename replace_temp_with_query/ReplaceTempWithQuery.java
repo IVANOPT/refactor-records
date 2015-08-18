@@ -6,11 +6,13 @@ public class ReplaceTempWithQuery {
     double basePrice = quality * itemPrice;
     //before refactor end
 
-    if (basePrice > 1) {
-        return basePrice * 0.95;
-    } else {
-        return basePrice * 0.98;    
-    }
+    double basePriceCount() {
+        if (basePrice > 1) {
+            return basePrice * 0.95;
+        } else {
+            return basePrice * 0.98;    
+        }
+    } 
 
     //after refactor
     double refactorBasePriceCount() {
